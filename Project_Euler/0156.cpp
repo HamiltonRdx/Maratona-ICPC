@@ -18,6 +18,7 @@
 // 
 // ============================================================================
 #include <cstdio>
+#include "../benchmark.h"
 
 typedef long long int LLI;
 
@@ -72,6 +73,9 @@ LLI busca(int d, LLI min, LLI max)
 
 int main()
 {
+    timespec t1, t2;
+    clock_gettime(CLOCK_REALTIME, &t1);
+
     LLI soma = 0LL;
     for (int d = 1; d < 10; d++)
     {
@@ -81,6 +85,9 @@ int main()
     }
 
     printf("soma = %lld\n", soma);
+
+    clock_gettime(CLOCK_REALTIME, &t2);
+    printf("Tempo: %lds:%ldns\n", diff(t1,t2).tv_sec, diff(t1,t2).tv_nsec);
 
     return 0;
 }
