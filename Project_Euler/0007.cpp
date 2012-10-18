@@ -21,28 +21,12 @@
 #include <iostream>
 #include <cstring>
 #include <vector>
-#include <ctime>
 #include <cmath>
+#include "../benchmark.h"
 using namespace std;
 
 typedef unsigned long long int ULLI;
 const int MAX = 195000;
-
-timespec diff(timespec start, timespec end)
-{
-	timespec temp;
-	if (end.tv_nsec - start.tv_nsec < 0)
-    {
-		temp.tv_sec = end.tv_sec - start.tv_sec-1;
-		temp.tv_nsec = 1000000000 + end.tv_nsec - start.tv_nsec;
-	}
-    else
-    {
-		temp.tv_sec = end.tv_sec - start.tv_sec;
-		temp.tv_nsec = end.tv_nsec - start.tv_nsec;
-	}
-	return temp;
-}
 
 int main()
 {
@@ -58,7 +42,7 @@ int main()
     
     // Marca 2 como primo e seus múltiplos como compostos
     eh_primo[2] = 1; primos.push_back(2);
-    for (int j=2*2; i<MAX; i+=2)
+    for (int i=2*2; i<MAX; i+=2)
         eh_primo[i] = 0;
 
     // Só precisa passar pelos impares
