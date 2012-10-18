@@ -51,7 +51,7 @@ inline LLI f(LLI n, int d)
 }
 
 
-inline LLI busca(int d, LLI min, LLI max)
+LLI busca(int d, LLI min, LLI max)
 {
     LLI f_min = f(min, d);
 
