@@ -15,11 +15,20 @@
 // 
 // ============================================================================
 #include <cstdio>
-#include <iostream>
-using namespace std;
 
 int main()
 {
+    char dna[1001], *ptr;
+
+    gets(dna);
+
+    ptr = dna;
+
+    while (*ptr != '\0')
+    {
+        putchar(*ptr == 'T' ? 'U' : *ptr);
+        ptr++;
+    }
+
     return 0;
 }
-
