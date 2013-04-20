@@ -20,17 +20,13 @@
 int main()
 {
     char s1[1001], s2[1001];
-
     gets(s1); gets(s2);
     int tam = strlen(s1);
-
     int dist = 0;
     for (int i = 0; i < tam; i++)
         if (s1[i] != s2[i])
             dist++;
-
     printf("%d\n", dist);
-
     return 0;
 }
 

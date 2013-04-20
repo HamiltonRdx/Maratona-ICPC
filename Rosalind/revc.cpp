@@ -21,10 +21,9 @@ int main()
 {
     char dna[1002];
     int tam = strlen(gets(dna));
-
-    for (int i = tam-1; i >= 0; i--)
+    for (int i = tam - 1; i >= 0; i--)
     {
-        switch(dna[i])
+        switch (dna[i])
         {
             case 'A':
                 putchar('T'); break;
@@ -37,7 +36,6 @@ int main()
         }
     }
     putchar('\n');
-
     return 0;
 }
 

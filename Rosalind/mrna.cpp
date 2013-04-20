@@ -21,7 +21,6 @@ int main()
 {
     long long unsigned qtd = 3; // Já inicia com 3 por causa do stop codon
     char c;
-
     while ((c = getchar()) != '\n')
     {
         switch (c)
@@ -36,24 +35,19 @@ int main()
             case 'K':
             case 'N':
             case 'Q':
-            case 'Y': qtd = (qtd*2) % 1000000; break;
-
-            case 'I': qtd = (qtd*3) % 1000000; break;
-
+            case 'Y': qtd = (qtd * 2) % 1000000; break;
+            case 'I': qtd = (qtd * 3) % 1000000; break;
             case 'A':
             case 'G':
             case 'P':
             case 'T':
-            case 'V': qtd = (qtd*4) % 1000000; break;
-
+            case 'V': qtd = (qtd * 4) % 1000000; break;
             case 'L':
             case 'R':
-            case 'S': qtd = (qtd*6) % 1000000; break;
+            case 'S': qtd = (qtd * 6) % 1000000; break;
         }
     }
-
     printf("%llu\n", qtd);
-
     return 0;
 }
 

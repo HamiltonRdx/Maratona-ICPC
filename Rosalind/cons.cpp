@@ -39,7 +39,6 @@ void profila()
                 prof[3][i++]++; break;
         }
     }
-
     tam = i;
 }
 
@@ -53,7 +52,6 @@ char max_prof(int j)
             max = prof[i][j];
             max_idx = i;
         }
-
     return letra[max_idx];
 }
 
@@ -61,18 +59,15 @@ char max_prof(int j)
 int main()
 {
     memset(prof, 0, sizeof(prof));
-
     char lixo[100];
     while (gets(lixo) != NULL)
     {
         scanf("%[^>]", dna); // melhor que ler cada caractere separadamente
         profila();
     }
-
     // Imprime o Consensus
     for (int j = 0; j < tam; j++)
         printf("%c", max_prof(j));
- 
     // Imprime a Profile Matrix
     for (int i = 0; i < 4; i++)
     {
@@ -80,7 +75,6 @@ int main()
         for (int j = 0; j < tam; j++)
             printf(" %d", prof[i][j]);
     }
-
     return 0;
 }
 

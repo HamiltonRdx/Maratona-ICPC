@@ -27,11 +27,9 @@ int main()
     {
         f[1] = f[2] = 1;
         for (int i = 3; i <= n; i++)
-            f[i] = f[i-1] + k * f[i-2];
-
+            f[i] = f[i - 1] + k * f[i - 2];
         printf("f[%d] = %llu\n", n, f[n]);
     }
-
     return 0;
 }
 

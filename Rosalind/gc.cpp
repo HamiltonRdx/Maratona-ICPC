@@ -21,7 +21,7 @@
 char linha[1001];
 int nome, maior_nome;
 int i = 0, maior_i = 0;
-int tam, bps=0, gc=0;
+int tam, bps = 0, gc = 0;
 double gc_content, maior_content = -1.0;
 
 
@@ -44,24 +44,20 @@ int main()
         if (linha[0] == '>')
         {
             if (i++) calcula();
-            sscanf(linha+10, "%d", &nome);
+            sscanf(linha + 10, "%d", &nome);
             bps = gc = 0;
         }
         else
         {
             tam = strlen(linha);
             bps += tam;
-
             for (int j = 0; j < tam; j++)
                 if (linha[j] == 'G' || linha[j] == 'C')
                     gc++;
         }
     }
-
     calcula(); // Calcula gc_content do último input
-
-    printf("Rosalind_%04d\n%.6f\n", maior_nome, 100*maior_content);
-
+    printf("Rosalind_%04d\n%.6f\n", maior_nome, 100 * maior_content);
     return 0;
 }
 

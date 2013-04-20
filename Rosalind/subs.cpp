@@ -22,17 +22,14 @@ using namespace std;
 int main()
 {
     string s, t;
-
     getline(cin, s);
     getline(cin, t);
-
     unsigned p = s.find(t);
-    while (p != (unsigned)-1)
+    while (p != (unsigned) - 1)
     {
-        cout << p+1 << " ";
-        p = s.find(t, p+1);
+        cout << p + 1 << " ";
+        p = s.find(t, p + 1);
     }
-
     return 0;
 }
 

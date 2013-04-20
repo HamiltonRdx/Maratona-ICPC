@@ -39,14 +39,11 @@ int main()
     ct["GCT"] = 'A'; ct["GCC"] = 'A'; ct["GCA"] = 'A'; ct["GCG"] = 'A';
     ct["GAT"] = 'D'; ct["GAC"] = 'D'; ct["GAA"] = 'E'; ct["GAG"] = 'E';
     ct["GGT"] = 'G'; ct["GGC"] = 'G'; ct["GGA"] = 'G'; ct["GGG"] = 'G';
-
     string lin, dna, intron;
     char c;
-
     getline(cin, lin);
     while (getline(cin, lin) && lin.at(0) != '>')
         dna.append(lin);
-
     while (getline(cin, lin))
     {
         if (lin.at(0) == '>')
@@ -60,11 +57,9 @@ int main()
         }
     }
     dna.erase(dna.find(intron), intron.length());
-
     int i = -3;
-    while ((c = ct[dna.substr(i+=3, 3)]) != 'Z')
+    while ((c = ct[dna.substr(i += 3, 3)]) != 'Z')
         cout << c;
     cout << '\n';
-
     return 0;
 }

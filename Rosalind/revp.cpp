@@ -32,7 +32,7 @@ map<char, char> comp;
 
 bool eh_palindromo(char *s, int len)
 {
-    int i = 0, j = len-1;
+    int i = 0, j = len - 1;
     while (i < j)
     {
         if (s[i] != comp[s[j]])
@@ -40,7 +40,6 @@ bool eh_palindromo(char *s, int len)
         i++;
         j--;
     }
-
     return (i > j);
 }
 
@@ -49,32 +48,25 @@ int main()
 {
     timespec t1, t2;
     clock_gettime(CLOCK_REALTIME, &t1);
-
     // Complementos
     comp['A'] = 'T'; comp['T'] = 'A'; comp['C'] = 'G'; comp['G'] = 'C';
-
     char lin[MAX], dna[MAX];
-    int tam=0;
-
+    int tam = 0;
     gets(lin); // ">Rosalind_xx"
     while (gets(lin) != NULL)
     {
         strcpy(dna + tam, lin);
         tam += strlen(lin);
     }
-    *(dna+tam) = '\0';
-
+    *(dna + tam) = '\0';
     //printf("\'%s\'\n", dna);
-
     // len += 2, pois não existe reverse palindrome de comprimento ímpar
     for (int i = 0; i < tam - 3; i++)
-        for (int len = 4; len <= 12 && i+len <= tam; len += 2)
-            if (eh_palindromo(dna+i, len))
-                printf("%d %d\n", i+1, len);
-
+        for (int len = 4; len <= 12 && i + len <= tam; len += 2)
+            if (eh_palindromo(dna + i, len))
+                printf("%d %d\n", i + 1, len);
     clock_gettime(CLOCK_REALTIME, &t2);
-    printf("Tempo: %lds:%09ldns\n", diff(t1,t2).tv_sec, diff(t1,t2).tv_nsec);
-
+    printf("Tempo: %lds:%09ldns\n", diff(t1, t2).tv_sec, diff(t1, t2).tv_nsec);
     return 0;
 }
 

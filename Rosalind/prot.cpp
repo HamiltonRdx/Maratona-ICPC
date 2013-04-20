@@ -40,12 +40,10 @@ int main()
     ct["GCU"] = 'A'; ct["GCC"] = 'A'; ct["GCA"] = 'A'; ct["GCG"] = 'A';
     ct["GAU"] = 'D'; ct["GAC"] = 'D'; ct["GAA"] = 'E'; ct["GAG"] = 'E';
     ct["GGU"] = 'G'; ct["GGC"] = 'G'; ct["GGA"] = 'G'; ct["GGG"] = 'G';
-
     gets(rna);
     int i = -3;
-    while ((c = ct[string(rna, i+=3, 3)]) != 'Z')
+    while ((c = ct[string(rna, i += 3, 3)]) != 'Z')
         putchar(c);
-
     return 0;
 }
 

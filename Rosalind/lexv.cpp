@@ -33,7 +33,7 @@ void combina(int len)
             s[len] = a[i];
             s[len + 1] = '\0';
             puts(s);
-            combina(len+1);
+            combina(len + 1);
             s[len] = '\0'; // backtrack
         }
     }
@@ -46,10 +46,8 @@ int main()
     while ((c = getchar()) != '\n')
         if (c != ' ')
             a[qtd++] = c;
-
     scanf("%d", &n);
     combina(0);
-
     return 0;
 }
 

@@ -41,10 +41,8 @@ int main()
     m['V'] = 99.06841;
     m['W'] = 186.07931;
     m['Y'] = 163.06333;
-
     char pstr[1002], *ptr;
     fgets(pstr, 1002, stdin);
-
     ptr = pstr;
     double massa = 0.0;
     while (*ptr != '\n')
@@ -52,9 +50,7 @@ int main()
         massa += m[*ptr];
         ptr++;
     }
-
     printf("%.3f\n", massa);
-
     return 0;
 }
 

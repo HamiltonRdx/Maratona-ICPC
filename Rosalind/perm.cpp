@@ -42,9 +42,9 @@ void permuta(char *s, int i, int n)
     {
         for (int j = i; j <= n; j++)
         {
-            swap(s+i, s+j);
-            permuta(s, i+1, n);
-            swap(s+i, s+j);
+            swap(s + i, s + j);
+            permuta(s, i + 1, n);
+            swap(s + i, s + j);
         }
     }
 }
@@ -55,18 +55,14 @@ int main()
     // A quantidade de permutações é n!
     int fat[] = {1, 1, 2, 6, 24, 120, 720, 5040};
     int n;
-
     scanf("%d", &n);
     printf("%d\n", fat[n]);
-
     char str[8];
     // Constrói a primeira permutação
     for (int i = 0; i < n; i++)
         str[i] = (char)(i + 1) + '0';
     str[n] = '\0';
-
-    permuta(str, 0, n-1);
-
+    permuta(str, 0, n - 1);
     return 0;
 }
 
