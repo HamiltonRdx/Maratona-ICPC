@@ -32,12 +32,9 @@
 int main()
 {
     double prod = 1.0;
-
     for (double num = 40.0, den = 20.0; den >= 1; num--, den--)
-        prod *= num/den;
-
+        prod *= num / den;
     printf("%.0f\n", prod);
-
     return 0;
 }
 

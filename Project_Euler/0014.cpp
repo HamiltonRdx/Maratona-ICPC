@@ -25,14 +25,11 @@ int main()
 {
     long long unsigned n;
     int i, count, maior = 0, maior_i = 0, collatz[TAM];
-
     memset(collatz, 0, sizeof(collatz));
-
     for (i = 1; i < 1000000; i++)
     {
         n = i;
         count = 1;
-
         while (n != 1)
         {
             if (n < TAM && collatz[n])
@@ -40,26 +37,20 @@ int main()
                 count += collatz[n];
                 break;
             }
-
             if (n % 2)
                 n = 3 * n + 1;
             else
                 n /= 2;
-
             count++;
         }
-
         collatz[i] = count;
-
         if (count > maior)
         {
             maior = count;
             maior_i = i;
         }
     }
-
     printf("%d\n", maior_i);
-
     return 0;
 }
 

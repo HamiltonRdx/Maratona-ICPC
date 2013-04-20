@@ -1,17 +1,17 @@
 // ============================================================================
-// 
+//
 //       Filename:  0008.cpp
-// 
+//
 //    Description:  projecteuler.net/problem=8
-// 
+//
 //        Version:  1.0
 //        Created:  09/03/2012 05:34:24 PM
 //       Revision:  none
 //       Compiler:  g++
-// 
+//
 //         Author:  Julio B. Silva (351202), julio(at)juliobs.com
 //        Company:  UFSCar
-// 
+//
 // ============================================================================
 #include <iostream>
 #include <cstring>
@@ -41,9 +41,8 @@ char str[] = "73167176531330624919225119674426574742355349194934"
 inline int mul(int esq, int dir)
 {
     int produto = 1;
-    for (int i=esq; i<=dir; i++)
+    for (int i = esq; i <= dir; i++)
         produto *= str[i] - '0';
-
     return produto;
 }
 
@@ -51,14 +50,12 @@ int main()
 {
     int max = 0;
     int tam = strlen(str);   // O enunciado diz que é 1000, mas generalizo aqui
-    for (int i=4; i<=tam; i++)
+    for (int i = 4; i <= tam; i++)
     {
-        int atual = mul(i-4, i);
+        int atual = mul(i - 4, i);
         if (atual > max)
             max = atual;
     }
-
     cout << "Maior produto: " << max << endl;
-
     return 0;
 }
