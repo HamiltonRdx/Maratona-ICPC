@@ -2,7 +2,8 @@
 //
 //       Filename:  0006.cpp
 //
-//    Description:
+//    Description:  Project Euler 6 - Sum square difference
+//                  projecteuler.net/problem=6
 //
 //        Version:  1.0
 //        Created:  08/24/2012 06:46:12 PM
