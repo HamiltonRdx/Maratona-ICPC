@@ -19,12 +19,9 @@ int main()
 {
     int n, k, p = 1;
     scanf("%d %d", &n, &k);
-
     for (int i = n; i > (n - k); i--)
         p = (p * i) % 1000000; // Não dá overflow, pois o máximo é 1000000*100
-
     printf("%d\n", p);
-
     return 0;
 }
 

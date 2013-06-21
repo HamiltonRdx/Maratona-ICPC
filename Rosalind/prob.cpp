@@ -23,17 +23,14 @@ int main()
 {
     char s[150];
     int at = 0, gc = 0, tam = strlen(gets(s));
-
     for (int i = 0; i < tam; i++)
         if (s[i] == 'A' || s[i] == 'T')
             at++;
         else
             gc++;
-    
     double a;
     while (scanf("%lf", &a) != EOF)
-        printf("%.3f ", log10(pow(a/2, gc) * pow((1.0 - a)/2, at)));
-
+        printf("%.3f ", log10(pow(a / 2, gc) * pow((1.0 - a) / 2, at)));
     return 0;
 }
 

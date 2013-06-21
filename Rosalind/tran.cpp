@@ -20,10 +20,9 @@ using namespace std;
 
 int main()
 {
-    map<char,bool> tipo;
+    map<char, bool> tipo;
     tipo['A'] = tipo['G'] = 0; // Purine
     tipo['C'] = tipo['T'] = 1; // Pyrimidine
-
     char lin[1001], dna[2][1001];
     int n = -1, tam = 0;
     while (gets(lin) != NULL)
@@ -39,7 +38,6 @@ int main()
             tam += strlen(lin);
         }
     }
-
     int transitions = 0, transversions = 0;
     for (int i = 0; i < tam; i++)
         if (dna[0][i] != dna[1][i])
@@ -49,9 +47,7 @@ int main()
             else
                 transversions++;
         }
-
-    printf("%f\n", (double)transitions/transversions);
-
+    printf("%f\n", (double)transitions / transversions);
     return 0;
 }
 
