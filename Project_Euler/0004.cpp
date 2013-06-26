@@ -2,7 +2,8 @@
 //
 //       Filename:  0004.cpp
 //
-//    Description:  projecteuler.net/problem=4
+//    Description:  Project Euler 4 - Largest palindrome product
+//                  projecteuler.net/problem=4
 //
 //        Version:  1.0
 //        Created:  08/16/2012 09:43:45 PM
@@ -13,7 +14,6 @@
 //        Company:  UFSCar
 //
 // ============================================================================
-
 #include <iostream>
 #include <sstream>
 #include <vector>

@@ -2,8 +2,10 @@
 //
 //       Filename:  0002.cpp
 //
-//    Description:  projecteuler.net/problem=2
-//                  A sequencia de fibonacci tem um impar a cada 3 termos, pois
+//    Description:  Project Euler 2 - Even Fibonacci numbers
+//                  projecteuler.net/problem=2
+//
+//                  A sequência de fibonacci tem um ímpar a cada 3 termos, pois
 //                  é uma repetição do seguinte:
 //                      impar + impar = par
 //                      impar + par = impar

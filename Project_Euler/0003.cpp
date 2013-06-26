@@ -2,7 +2,8 @@
 //
 //       Filename:  0003.cpp
 //
-//    Description:  projecteuler.net/problem=3
+//    Description:  Project Euler 3 - Largest prime factor
+//                  projecteuler.net/problem=3
 //
 //        Version:  1.0
 //        Created:  08/16/2012 08:56:51 PM
@@ -13,7 +14,6 @@
 //        Company:  UFSCar
 //
 // ============================================================================
-
 #include <iostream>
 #include <cstring>
 using namespace std;
@@ -23,7 +23,7 @@ typedef long long int LLI;
 int main()
 {
     LLI n = 600851475143;
-    LLI i = 3;      //nesse caso n já é impar
+    LLI i = 3;      //nesse caso n já é ímpar
     while (n != 1)
     {
         i += 2;

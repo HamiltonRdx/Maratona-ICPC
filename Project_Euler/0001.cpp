@@ -2,8 +2,8 @@
 //
 //       Filename:  0001.cpp
 //
-//    Description:  https://projecteuler.net/problem=1
-//                  Find the sum of all the multiples of 3 or 5 below 1000.
+//    Description:  Project Euler 1 - Multiples of 3 and 5
+//                  projecteuler.net/problem=1
 //
 //        Version:  1.0
 //        Created:  08/15/2012 08:02:51 PM
@@ -14,9 +14,9 @@
 //        Company:  UFSCar
 //
 // ============================================================================
-
 #include <iostream>
 using namespace std;
+
 
 int main()
 {
