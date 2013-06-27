@@ -2,8 +2,8 @@
 //
 //       Filename:  0005.cpp
 //
-//    Description:  projecteuler.net/problem=5
-//                  Menor natural divisível por todos os números de 1 a 20
+//    Description:  Project Euler 5 - Smallest multiple
+//                  projecteuler.net/problem=5
 //
 //        Version:  1.0
 //        Created:  08/24/2012 04:07:03 AM
@@ -14,7 +14,6 @@
 //        Company:  UFSCar
 //
 // ============================================================================
-
 #include <iostream>
 using namespace std;
 
@@ -32,10 +31,12 @@ ULLI mdc(ULLI a, ULLI b)
     return a;
 }
 
+
 ULLI mmc(ULLI a, ULLI b)
 {
     return a * b / mdc(a, b);
 }
+
 
 int main()
 {
@@ -48,3 +49,4 @@ int main()
     cout << mmc_atual << endl;
     return 0;
 }
+

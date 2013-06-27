@@ -17,6 +17,7 @@
 #include <iostream>
 using namespace std;
 
+
 int main()
 {
     int soma = 101 * 50;    // Soma de PA
@@ -27,3 +28,4 @@ int main()
     cout << soma2 - soma_quadrados << endl;
     return 0;
 }
+

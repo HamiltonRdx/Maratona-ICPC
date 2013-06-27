@@ -19,6 +19,7 @@
 #include <vector>
 using namespace std;
 
+
 // abc*def tem sempre 5 algarismos
 bool palindromo(int n)
 {
@@ -36,6 +37,7 @@ bool palindromo(int n)
     return true;
 }
 
+
 int main()
 {
     int i, j, k, maior;
@@ -50,3 +52,4 @@ int main()
     cout << maior << endl;
     return 0;
 }
+
