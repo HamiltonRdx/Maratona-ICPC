@@ -3,8 +3,8 @@
 # Created: Mon, 01 Apr 2013 19:33:05 -0300
 
 """
-Project Euler - Factorial digit sum
-https://projecteuler.net/problem=20
+Project Euler 20 - Factorial digit sum
+projecteuler.net/problem=20
 """
 __author__ = "Julio Batista Silva"
 __copyright__ = ""

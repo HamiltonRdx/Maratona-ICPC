@@ -2,7 +2,8 @@
 //
 //       Filename:  0008.cpp
 //
-//    Description:  projecteuler.net/problem=8
+//    Description:  Project Euler 8 - Largest product in a series
+//                  projecteuler.net/problem=8
 //
 //        Version:  1.0
 //        Created:  09/03/2012 05:34:24 PM
@@ -16,6 +17,7 @@
 #include <iostream>
 #include <cstring>
 using namespace std;
+
 
 char str[] = "73167176531330624919225119674426574742355349194934"
              "96983520312774506326239578318016984801869478851843"
@@ -38,6 +40,7 @@ char str[] = "73167176531330624919225119674426574742355349194934"
              "05886116467109405077541002256983155200055935729725"
              "71636269561882670428252483600823257530420752963450";
 
+
 inline int mul(int esq, int dir)
 {
     int produto = 1;
@@ -45,6 +48,7 @@ inline int mul(int esq, int dir)
         produto *= str[i] - '0';
     return produto;
 }
+
 
 int main()
 {
@@ -59,3 +63,4 @@ int main()
     cout << "Maior produto: " << max << endl;
     return 0;
 }
+

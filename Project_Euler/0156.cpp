@@ -2,7 +2,7 @@
 //
 //       Filename:  0156.cpp
 //
-//    Description:  Project Euler 156
+//    Description:  Project Euler 156 - Counting Digits
 //                  projecteuler.net/problem=156
 //
 //                  Semelhante ao UVa 12241
@@ -20,12 +20,13 @@
 #include <cstdio>
 #include "../benchmark.h"
 
+
 typedef long long int LLI;
+
 
 // power10[i] = 10^i
 LLI power10[] = {1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000,
-                 1000000000LL, 10000000000LL, 100000000000LL
-                };
+                 1000000000LL, 10000000000LL, 100000000000LL};
 
 
 // Retorna o número de vezes que o dígito d aparece de 0 a n

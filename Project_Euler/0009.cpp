@@ -2,7 +2,9 @@
 //
 //       Filename:  0009.cpp
 //
-//    Description:  projecteuler.net/problem=9
+//    Description:  Project Euler 9 - Special Pythagorean triplet
+//                  projecteuler.net/problem=9
+//
 //                  Responder a*b*c, onde a+b+c=1000 e a^2+b^2=c^2.
 //                  E sabendo que a,b e c são inteiros positivos.
 //
@@ -26,6 +28,7 @@
 // ============================================================================
 #include <iostream>
 using namespace std;
+
 
 int main()
 {

@@ -16,6 +16,7 @@
 // ============================================================================
 #include <cstdio>
 
+
 int main()
 {
     // Números de 1 a 9. Contei as letras nos dedos

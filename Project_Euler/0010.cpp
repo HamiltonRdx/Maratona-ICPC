@@ -2,7 +2,9 @@
 //
 //       Filename:  0010.cpp
 //
-//    Description:  projecteuler.net/problem=10
+//    Description:  Project Euler 10 - Summation of primes
+//                  projecteuler.net/problem=10
+//
 //                  Soma de todos os primos menores que 2000000
 //
 //        Version:  1.0
@@ -18,8 +20,10 @@
 #include <cstring>
 using namespace std;
 
+
 typedef unsigned long long int ULLI;
 const int MAX = 2000000; // 2MB
+
 
 int main()
 {

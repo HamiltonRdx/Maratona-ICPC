@@ -19,7 +19,9 @@
 #include <cstdio>
 #include <cstring>
 
+
 #define TAM 2000000 // O tamanho da tabela deve ser maior ou igual a 1000000
+
 
 int main()
 {
